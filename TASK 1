@@ -1,0 +1,166 @@
+<?php
+echo "PHP is working successfully!";
+?>
+Place this inside htdocs (XAMPP) or www/html (LAMP) and run:
+
+arduino
+Copy code
+http://localhost/hello.php
+✅ 2. Git & GitHub Setup Commands
+Initialize Git
+bash
+Copy code
+git init
+Basic Git Commands
+bash
+Copy code
+git add .
+git commit -m "Initial commit"
+Link GitHub Repo
+bash
+Copy code
+git remote add origin https://github.com/your-username/your-repo.git
+git push -u origin main
+✅ 3. HTML5 Fundamentals Code Examples
+✔ Basic HTML Structure using semantic tags
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Structure</title>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a> |
+    <a href="#">About</a> |
+    <a href="#">Contact</a>
+</nav>
+
+<section>
+    <h2>Section Title</h2>
+    <p>This is a section paragraph.</p>
+</section>
+
+<article>
+    <h2>Article Title</h2>
+    <p>This is an article paragraph.</p>
+</article>
+
+<footer>
+    <p>&copy; 2025 My Website</p>
+</footer>
+
+</body>
+</html>
+✔ HTML5 Form Example
+html
+Copy code
+<form>
+    <label>Name:</label>
+    <input type="text" name="name"><br><br>
+
+    <label>Select Gender:</label>
+    <label><input type="radio" name="gender" value="male"> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label><br><br>
+
+    <label>Choose Skills:</label>
+    <input type="checkbox" name="skills" value="html"> HTML
+    <input type="checkbox" name="skills" value="css"> CSS
+    <input type="checkbox" name="skills" value="js"> JavaScript<br><br>
+
+    <label>Select Country:</label>
+    <select>
+        <option>India</option>
+        <option>USA</option>
+    </select><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+✔ Multimedia Embeds (audio, video, iframe)
+html
+Copy code
+<video width="400" controls>
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+<audio controls>
+    <source src="audio.mp3" type="audio/mp3">
+</audio>
+
+<iframe width="400" height="250" src="https://youtube.com/embed/example"></iframe>
+✔ Table Example with <thead>, <tbody>, <tfoot>
+html
+Copy code
+<table border="1">
+    <thead>
+        <tr><th>Name</th><th>Age</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>John</td><td>25</td></tr>
+        <tr><td>Ana</td><td>22</td></tr>
+    </tbody>
+    <tfoot>
+        <tr><td colspan="2">End of Data</td></tr>
+    </tfoot>
+</table>
+✅ 4. CSS3 Styling Examples
+✔ Inline, Internal, External CSS
+html
+Copy code
+<p style="color: blue;">This is inline CSS text.</p>
+
+<style>
+    p { color: green; }
+</style>
+
+<link rel="stylesheet" href="styles.css">
+✔ Flexbox Layout
+css
+Copy code
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+✔ Grid Layout
+css
+Copy code
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+✔ Shadows, Borders, Gradients
+css
+Copy code
+.box {
+    border: 2px solid #333;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+✔ Basic Animation
+css
+Copy code
+@keyframes moveBox {
+    from { transform: translateX(0); }
+    to { transform: translateX(100px); }
+}
+
+.animate {
+    animation: moveBox 2s infinite alternate;
+}
+✔ Media Query (Responsive Design)
+css
+Copy code
+@media (max-width: 600px) {
+    body {
+        background-color: lightyellow;
+    }
+}
